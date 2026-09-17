@@ -1,5 +1,7 @@
 # This works on Godot 4.7.
 This fork adds compatibility of GodotOceanWaves for Godot 4.7 and the use of `RenderingDevice.texture_get_data_async` for retrieving displacement textures without blocking the main loop.
+
+Thanks to [PR #20](https://github.com/2Retr0/GodotOceanWaves/pull/20) for making the project work on Godot 4.6.
 # NikBellini Fork of KrautDev Fork of GodotOceanWaves
 This fork aims to add several features to make this amazing ocean implementation usable in a Godot game project.
 ### Functional
