@@ -160,12 +160,13 @@ func _manage_cpu_displacement_textures_updates(delta) -> void:
 		if _texture_loading_index >= len(_cpu_displacement_textures):
 			_texture_loading_index = 0
 		var _buffer_img : Image
-		thread = Thread.new()
+		# thread = Thread.new()
 		_img_async_image_idx = _cpu_displacement_textures_indeces[_texture_loading_index]
-		thread.start(_update_cpu_displacement_textures)
-		#_update_cpu_displacement_textures()
+		# thread.start(_update_cpu_displacement_textures)
+		_update_cpu_displacement_textures()
 		if not _buffer_img:
-			thread.wait_to_finish()
+			# thread.wait_to_finish()
+			pass
 		mutex.lock()
 		_cpu_displacement_textures[_img_async_image_idx] = _img_async_buffer
 		mutex.unlock()

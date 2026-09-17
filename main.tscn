@@ -7,7 +7,7 @@
 [ext_resource type="Material" uid="uid://byumtcccq4ew3" path="res://assets/water/mat_water.tres" id="5_lt75t"]
 [ext_resource type="ArrayMesh" uid="uid://ix4vp1y05f1s" path="res://assets/water/clipmap_high.obj" id="5_n61pp"]
 [ext_resource type="AudioStream" uid="uid://cvvn0vke5comw" path="res://assets/ocean_loop.wav" id="6_jpklm"]
-[ext_resource type="Script" uid="uid://c4agvhbwj7pjr" path="res://assets/water/water.gd" id="7_s0x5e"]
+[ext_resource type="Script" uid="uid://dbxip3y4rh1va" path="res://assets/water/water.gd" id="7_s0x5e"]
 [ext_resource type="AudioStream" uid="uid://ck6vmandgjhy0" path="res://assets/wind_loop.wav" id="8_6r5si"]
 [ext_resource type="Shader" uid="uid://cfkil18smyukv" path="res://assets/shaders/spatial/sea_spray.gdshader" id="8_eu8jb"]
 [ext_resource type="Material" uid="uid://5xqyddws6rt5" path="res://assets/water/mat_spray.tres" id="9_skbf4"]
@@ -121,10 +121,11 @@ transform = Transform3D(-0.996195, -0.0151344, 0.0858316, 0, 0.984807, 0.173648,
 script = ExtResource("4_v2yip")
 
 [node name="Water" type="MeshInstance3D" parent="." unique_id=1433010231]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 13)
 sorting_offset = 999.0
 material_override = ExtResource("5_lt75t")
 cast_shadow = 0
+extra_cull_margin = 700.0
 mesh = ExtResource("5_n61pp")
 skeleton = NodePath("")
 script = ExtResource("7_s0x5e")
